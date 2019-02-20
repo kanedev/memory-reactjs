@@ -11,13 +11,17 @@ function CoolComponent() {
     return React.createElement('p', {}, 'Youpi So Cool !')
   }
 
-  // Linking to the virtual DOM
-ReactDOM.render(
-    React.createElement(CoolComponent),
+// Creating a second new component with a function (JSX)
+  function BestComponent() {
+    return <p>JSX is So Cool !</p>
+  }
+
+
+   // Linking to the virtual DOM
+  ReactDOM.render(
+    <BestComponent />,
     document.getElementById('root')
   )
-
-
 
 
 
