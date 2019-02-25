@@ -1,19 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+
 import * as serviceWorker from './serviceWorker';
 
-// ReactDOM.render(<App />, document.getElementById('root'));
 
-// Creating a new component with a function
-function CoolComponent() {
-    return React.createElement('p', {}, 'Youpi So Cool !')
-  }
+
 
 // Creating a second new component with a function (JSX)
-  function BestComponent() {
-    return <p>JSX is So Cool !</p>
+  function BestComponent({ adjective='Cool'}) {
+    return <p>JSX is So  {adjective} ! ;-) </p>
   }
 
 
